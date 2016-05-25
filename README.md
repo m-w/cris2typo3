@@ -7,20 +7,23 @@ LME Webteam <admin-web@i5.cs.fau.de>  (www5.cs.fau.de)
 
 ###Features
 Alle publikationsbasierten Module aus univis2typo3 sind auch in "cris2typo3" verfügbar:
-Ausgewählte Publikationen
-Auflistung der Publikationen
-Auflistung der Publikationen (Mitarbeiterseite)^ [3]
-Neueste Publikationen        [4]
-Gemischte Publikationen*  
+- Ausgewählte Publikationen^
+- Auflistung der Publikationen
+- Auflistung der Publikationen (Mitarbeiterseite)^
+- Neueste Publikationen
+- Gemischte Publikationen*  
 
-
+^: Benötigt die einmalige manuelle Eingabe der CRIS PersonenID übers Typo3 Backend
+*Neu: Zeigt eine Auswahl beliebiger Publikationen anhand von CRIS PubIDs an.
 
 ###Änderungen gegenüber univis2web:
 --
+- Unterstützung nur für Publikationen. Vorlesungen, Mitarbeiter, ausgeschriebene Bachelor/Master-Arbeiten etc. nicht mittels CRIS.
+
 - Einige Daten wurden bisher nicht in CRIS importiert und können daher nicht mehr angezeigt werden: 
 2015 (203 Publications, Talks and Patents) --> 2015 (64 Publications)
   - Talks []
-  - Patents []
+  - Patente []
   - Dissertationen []
 
 - Links auf Mitarbeiterwebseiten fehlen in der Autorenliste, Feld für Webseiten v. FAU Mitarbeitern
@@ -30,7 +33,10 @@ Gemischte Publikationen*
 - Gruppierung der Publikationen nach Jahr, dann nach Typen: bequem per CRIS_FORMATTER:
 		$o = array("book","journal article","conference contribution","article in edited volumes","other");
 		$formatter2 = new CRIS_formatter("publication type", $o);	
-		
+
+#### Installation und Konfiguration
+
+Die Extension lässt über den Extension Manager aus dem Typo3 Backend installieren lassen. Dafür kann der Source Ordner unter typo3conf/ext/cris2typo3 kopiert werden oder die gezippte Ordnerstruktur kann direkt im ExtManager zum Upload ausgewählt werden. Die Metakonfiguration ist bisher nur möglich durch Änderungen der Datei 'cris2t3_config.php' im Hauptordner, um etwa OrganisationsID und Formatierungsoptionen anzupassen. Darüber hinaus ist es notwendig, dass jeder Mitarbeiter der "Ausgewählte Publikationen" oder "Auflistung der Publikationen (Mitarbeiterseite)" nutzen möchte einmalig im Backend seine CRIS PersonenID (Visitenkarte) einträgt. Diese "be_users" Tabelle von T3 wird dabei um einen weiteren Eintrag ergänzt, der das weitere Mapping erlaubt. 
 
 ####Weiteres
 
