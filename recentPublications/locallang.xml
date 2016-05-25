@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_univis2web_pi2&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="noPublications">No publications, yet.</label>
+			<label index="volume">vol.</label>
+			<label index="number">no.</label>
+			<label index="pp">pp.</label>
+			<label index="pages">pages</label>		
+			<label index="head_count"> Publications, Talks and Patents</label>
+			<label index="whoCited">Who cited this?</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="noPublications">Keine Publikationen.</label>
+			<label index="volume">Bd.</label>
+			<label index="number">Nr.</label>
+			<label index="pp">Seite(n)</label>
+			<label index="pages">Seiten</label>		
+			<label index="head_count"> Ver&#246;ffentlichungen, Vortr&#228;ge und Patente</label>
+			<label index="whoCited">Wer hat das zitiert?</label>
+		</languageKey>
+	</data>
+</T3locallang>

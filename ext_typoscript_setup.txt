@@ -1,0 +1,5 @@
+plugin.tx_cris2typo3_pi1.templateFile = EXT:cris2typo3/selectedPublications/template.tmpl
+plugin.tx_cris2typo3_pi2.templateFile = EXT:cris2typo3/listPublications/template.tmpl
+plugin.tx_cris2typo3_pi3.templateFile = EXT:cris2typo3/listPersonalPublications/template.tmpl
+plugin.tx_cris2typo3_pi4.templateFile = EXT:cris2typo3/recentPublications/template.tmpl
+plugin.tx_cris2typo3_any.templateFile = EXT:cris2typo3/listAnyPublications/template.tmpl

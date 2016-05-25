@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'cris2typo3'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">Cris2Typo3 - Selected Publications</label>
+			<label index="tt_content.list_type_pi2">Cris2Typo3 - List Publications</label>
+			<label index="tt_content.list_type_pi3">Cris2Typo3 - List Publications (Personal Page)</label>
+			<label index="tt_content.list_type_pi4">Cris2Typo3 - Recent Publications</label>
+			<label index="tt_content.list_type_any">Cris2Typo3 - Any Selected Publications</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.list_type_pi1">Cris2Typo3 - Ausgew&#228;lte Publikationen</label>
+			<label index="tt_content.list_type_pi2">Cris2Typo3 - Auflistung der Publikationen</label>
+			<label index="tt_content.list_type_pi3">Cris2Typo3 - Auflistung der Publikationen (Mitarbeiterseite)</label>
+			<label index="tt_content.list_type_pi4">Cris2Typo3 - Neueste Publikationen</label>
+			<label index="tt_content.list_type_any">Cris2Typo3 - Gemischte Publikationen</label>
+		</languageKey>
+	</data>
+</T3locallang>
